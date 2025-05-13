@@ -1,26 +1,38 @@
-// Change text content and style
-document.getElementById('changeBtn').addEventListener('click', function () {
-  const intro = document.getElementById('intro-text');
-  intro.textContent = "You've changed the text with JavaScript!";
-  intro.style.color = 'white';
-  intro.style.backgroundColor = 'teal';
-  intro.style.padding = '10px';
-  intro.style.borderRadius = '5px';
-});
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
 
-// Add an element dynamically
-document.getElementById('addBtn').addEventListener('click', function () {
-  const container = document.getElementById('message-container');
-  const newMessage = document.createElement('p');
-  newMessage.textContent = "Hello! I'm a new message.";
-  newMessage.className = 'new-message';
-  container.appendChild(newMessage);
-});
+button {
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
 
-// Remove last added message
-document.getElementById('removeBtn').addEventListener('click', function () {
-  const container = document.getElementById('message-container');
-  if (container.lastChild) {
-    container.removeChild(container.lastChild);
-  }
-});
+button:hover {
+  background-color: #2980b9;
+}
+
+.accordion-content {
+  display: none;
+  margin: 10px 0;
+  padding: 10px;
+  background: #e2e2e2;
+  border-radius: 4px;
+}
+
+#formFeedback {
+  color: red;
+  font-weight: bold;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}

@@ -2,29 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Interactive JavaScript Page</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Interactive Fun with JS</title>
+  <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
 <body>
+
   <header>
-    <h1 id="main-heading">Welcome to My Interactive Page</h1>
+    <h1 id="main-title">Welcome to My Interactive World!</h1>
   </header>
 
-  <section>
-    <p id="intro-text">Click the button below to change this text and style!</p>
-    <button id="changeBtn">Change Text and Style</button>
+  <!-- Event Buttons -->
+  <section id="events">
+    <h2>Event Playground</h2>
+    <button id="colorBtn">Change My Color</button>
+    <p id="hoverText">Hover over me for a surprise!</p>
+    <input type="text" id="keyInput" placeholder="Type something..." />
+    <p id="keyOutput"></p>
+    <button id="secretBtn">Double-Click Me!</button>
   </section>
 
-  <section>
-    <h2>Click to Add or Remove a Message</h2>
-    <button id="addBtn">Add Message</button>
-    <button id="removeBtn">Remove Message</button>
-    <div id="message-container"></div>
+  <!-- Gallery -->
+  <section id="gallery">
+    <h2>Image Gallery</h2>
+    <img id="slideshow" src="https://place-puppy.com/300x200" alt="Puppy" />
+    <div>
+      <button id="prev">Prev</button>
+      <button id="next">Next</button>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2025 </p>
-  </footer>
+  <!-- Accordion -->
+  <section id="accordion">
+    <h2>FAQ (Click to Expand)</h2>
+    <div class="accordion-item">
+      <h3 class="accordion-header">What is this?</h3>
+      <p class="accordion-content">An interactive webpage made with love and JavaScript!</p>
+    </div>
+    <div class="accordion-item">
+      <h3 class="accordion-header">Why learn JavaScript?</h3>
+      <p class="accordion-content">Because it's awesome and super useful on the web!</p>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section id="form-section">
+    <h2>Sign Up Form</h2>
+    <form id="signupForm" novalidate>
+      <label>Name: <input type="text" id="name" required /></label><br/>
+      <label>Email: <input type="email" id="email" required /></label><br/>
+      <label>Password: <input type="password" id="password" required minlength="8" /></label><br/>
+      <span id="formFeedback"></span><br/>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
 </body>
 </html>
